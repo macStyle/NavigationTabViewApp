@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: - PROPERTIES
+
     @State private var tabSelection = 1
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color.white)
+    }
+    
+    // MARK: - BODY
+
     var body: some View {
         
         NavigationView {
@@ -32,6 +40,7 @@ struct ContentView: View {
                     }
                     .tag(2)
             }
+            .background(Color.black)
             .accentColor(.black)
             // global, for all child views
             .navigationBarTitle(Text(navigationBarTitle), displayMode: .inline)
@@ -63,6 +72,9 @@ private extension ContentView {
         }
     }
 }
+
+// MARK: - PREVIEW
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

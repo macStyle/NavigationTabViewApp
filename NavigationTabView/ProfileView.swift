@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
     var body: some View {
+        
         NavigationLink(destination: Text("subview page")) {
+            
             ZStack {
+                
                 Color.yellow
                     .ignoresSafeArea()
                 
-                ScrollView {
+                VStack {
                     
-                    Text("This is the First View")
+                    Text("Profile View")
                         .foregroundColor(Color.black)
                         .padding()
                     
@@ -25,10 +29,6 @@ struct ProfileView: View {
                         .padding()
                         .background(Color.red)
                         .clipShape(Capsule())
-                    
-                    Spacer()
-                    
-                    Color.red.frame(width: 450, height: 1600)
                     
                 }
                 

@@ -16,7 +16,7 @@ struct SettingsView: View {
             Color.green
                 .ignoresSafeArea()
             
-            Text("This is the Second View")
+            Text("Settings View")
                 .foregroundColor(Color.black)
                 .padding()
         }
