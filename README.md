@@ -2,7 +2,7 @@
 
 Hiding the TabBar when navigating into a subview
 
-![](Gif.gif)
+![Alt text](https://media.giphy.com/media/LIUse2tXFBrUVHgyKD/giphy.gif)
 
 
 
